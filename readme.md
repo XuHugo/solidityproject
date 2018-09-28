@@ -10,3 +10,5 @@ csdn https://blog.csdn.net/xq723310
 4、lottery,这是一个使用solidity语言编写的智能合约，合约实现了抽奖功能.
 
 5、airdrop, 以太坊空投合约.
+
+6、Woolen, 薅羊毛合约，实现单个账户，获取多份空投.
