@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../../../../../src/token/ERC20/extensions/MockERC4626.sol";
+import "../src/MockERC4626.sol";
 import "./Asset.sol";
 
 contract ERC4626Test2 is Test {

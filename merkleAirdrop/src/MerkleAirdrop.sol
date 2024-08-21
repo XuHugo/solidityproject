@@ -15,7 +15,7 @@ contract MerkleAirdrop {
         bytes32[] memory proof,
         address account,
         uint amount
-    ) external view returns (bool) {
+    ) public view returns (bool) {
         bytes32 leaf = keccak256(
             bytes.concat(keccak256(abi.encode(account, amount)))
         );
@@ -26,7 +26,7 @@ contract MerkleAirdrop {
         bytes32[] calldata proof,
         address account,
         uint amount
-    ) external view returns (bool) {
+    ) public view returns (bool) {
         bytes32 leaf = keccak256(
             bytes.concat(keccak256(abi.encode(account, amount)))
         );
@@ -36,14 +36,14 @@ contract MerkleAirdrop {
     function processProof(
         bytes32[] memory proof,
         bytes32 leaf
-    ) external pure returns (bytes32) {
+    ) public pure returns (bytes32) {
         return proof.processProof(leaf);
     }
 
     function processProofCalldata(
         bytes32[] calldata proof,
         bytes32 leaf
-    ) external pure returns (bytes32) {
+    ) public pure returns (bytes32) {
         return proof.processProofCalldata(leaf);
     }
 }
