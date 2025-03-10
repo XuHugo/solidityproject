@@ -19,7 +19,7 @@ contract XXX is ERC20Interface {
     uint8 public constant decimals = 8;
 
     uint256 _totalSupply = 0;
-    uint256 _airdropAmount = 1000000;
+    uint256 constant _airdropAmount = 1000000;
     uint256 _cutoff = _airdropAmount * 10000;
 
     mapping(address => uint256) balances;
